@@ -1,0 +1,31 @@
+<h1>BDS-INPUT-SELECT</h1>
+<h2>Simple Input Select</h2>
+<bds-input-select 
+  [optionsList]="dataList"
+  value="" 
+  placeholder="Placeholder" 
+  label="Label Example" 
+  error="" 
+  helper="Helper Example"
+  disabled="false" 
+  inversed="false"
+  theme="pacasmayo"
+  (changeValue)="handleChangue($event)" 
+/>
+<br>
+
+<h2>Input Select with Reactive Form</h2>
+<form [formGroup]="form">
+  <bds-input-select 
+  [optionsList]="dataList"
+  placeholder="Placeholder" 
+  label="Label Example" 
+  error="" 
+  helper="Helper Example"
+  inversed="false"
+  theme="pacasmayo"
+  formControlName="inputSelectForm" 
+/>
+</form>
+<br>
+<button (click)="handleSubmit()">Submit</button>
