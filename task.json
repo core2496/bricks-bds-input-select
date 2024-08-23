@@ -1,0 +1,41 @@
+{
+  "setupTasks": [
+    {
+      "command": "npm install",
+      "name": "Install Dependencies"
+    }
+  ],
+
+  "tasks": {
+    "ng": {
+      "name": "ng",
+      "command": "npm run ng",
+      "runAtStart": false
+    },
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "watch": {
+      "name": "watch",
+      "command": "npm run watch",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test",
+      "runAtStart": false
+    },
+    "start-local": {
+      "name": "start-local",
+      "command": "npm run start-local",
+      "runAtStart": false
+    }
+  }
+}
