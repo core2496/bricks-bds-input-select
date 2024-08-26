@@ -1,32 +1,31 @@
+
 {
   "setupTasks": [
     {
-      "command": "npm install",
-      "name": "Install Dependencies"
-    },
-    {
-      "name": "Run Workspace",
-      "command": "npm run start"
+      "name": "Install Dependencies",
+      "command": "npm install"
     }
   ],
-
   "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true,
+      "preview": {
+        "port": 4200
+      }
+    },
     "ng": {
       "name": "ng",
       "command": "npm run ng",
       "runAtStart": false
     },
-    "start": {
-      "name": "start",
-      "command": "npm run start",
-      "runAtStart": false
-    },
     "build": {
       "name": "build",
-      "command": "npm run build",
+      "command": "ng build",
       "runAtStart": false
     },
-    "watch": {
+   "watch": {
       "name": "watch",
       "command": "npm run watch",
       "runAtStart": false
