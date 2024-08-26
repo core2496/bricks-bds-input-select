@@ -3,6 +3,10 @@
     {
       "command": "npm install",
       "name": "Install Dependencies"
+    },
+    {
+      "name": "Run Workspace",
+      "command": "npm run start"
     }
   ],
 
@@ -15,7 +19,7 @@
     "start": {
       "name": "start",
       "command": "npm run start",
-      "runAtStart": true
+      "runAtStart": false
     },
     "build": {
       "name": "build",
